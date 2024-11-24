@@ -393,7 +393,7 @@ body.nav-active { overflow: hidden; }
 
 .hero .container {
   display: grid;
-  gap: 10px;
+  gap: 110px;
 }
 
 .hero-title { color: var(--white); }
@@ -412,69 +412,6 @@ body.nav-active { overflow: hidden; }
   gap: 12px;
 }
 
-/* .hero-slider,
-.hero-card { position: relative; }
-
-.hero-card .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--white);
-  color: var(--charcoal);
-  font-size: 2rem;
-  padding: 25px;
-  border-radius: var(--radius-circle);
-  transition: var(--transition-1);
-  animation: pulse 2s ease infinite;
-}
-
-.hero-card .play-btn:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); } */
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--white_a70); }
-  75% { box-shadow: 0 0 0 20px transparent; }
-}
-
-.hero .slider-inner {
-  border-radius: var(--radius-10);
-  overflow: hidden;
-}
-
-.hero .slider-container {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  transition: var(--transition-2);
-}
-
-.hero .slider-item {
-  min-width: 100%;
-  width: 100%;
-  border-radius: var(--radius-10);
-  overflow: hidden;
-}
-
-.hero .slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--white_a70);
-  color: var(--charcoal);
-  font-size: 2rem;
-  padding: 12px;
-  border-radius: var(--radius-circle);
-  transition: var(--transition-1);
-}
-
-.hero .slider-btn:is(:hover, :focus-visible) { background-color: var(--white); }
-
-.hero .slider-btn.prev { left: 20px; }
-
-.hero .slider-btn.next { right: 20px; }
-
-
 
 /*-----------------------------------*\
   #HERO
@@ -488,7 +425,7 @@ body.nav-active { overflow: hidden; }
 
 
 /*-----------------------------------*\
-  #SERVICE
+  #About
 \*-----------------------------------*/
 
 .service { text-align: center; }
@@ -499,7 +436,7 @@ body.nav-active { overflow: hidden; }
   padding: 50px;
   box-shadow: var(--shadow-3);
   border-radius: var(--radius-6);
-  background-color: var(--dark-cornflower-blue_a7);
+  background-color: var(--cultured);
 }
 
 .service-card .card-icon {
@@ -620,14 +557,11 @@ body.nav-active { overflow: hidden; }
 .feature-card .card-icon ion-icon { --ionicon-stroke-width: 40px; }
 
 
-
-
-
 /*-----------------------------------*\
   #STATS
 \*-----------------------------------*/
 
-.stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
+/* .stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
 
 .stats-card {
   display: grid;
@@ -639,7 +573,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .stats-card .card-text .about-text > * { color: var(--white); }
-
+ */
 
 
 
@@ -648,7 +582,7 @@ body.nav-active { overflow: hidden; }
   #PROJECT
 \*-----------------------------------*/
 
-.project { background-color: var(--cultured); }
+/* .project { background-color: var(--cultured); }
 
 .project :is(.section-subtitle, .section-title) { text-align: center; }
 
@@ -683,9 +617,67 @@ body.nav-active { overflow: hidden; }
   color: var(--cadet-blue-crayola);
   font-size: var(--fs-8);
 }
+ */
 
 
 
+
+/*-----------------------------------*\
+  #CONTACT FORM
+\*-----------------------------------*/
+
+.contact-section {
+  background-color: var(--lavender-web);
+  padding-block: var(--section-padding);
+}
+
+.contact-form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: var(--radius-10);
+  box-shadow: var(--shadow-3);
+}
+
+.contact-form .input-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: var(--fs-6);
+  color: var(--charcoal);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--cadet-blue-crayola);
+  border-radius: var(--radius-6);
+  font-size: var(--fs-6);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--violet-blue-crayola);
+  box-shadow: var(--shadow-2);
+}
+
+.contact-form button {
+  background-color: var(--violet-blue-crayola);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+  font-size: var(--fs-6);
+}
+
+.contact-form button:hover {
+  background-color: var(--blue-crayola);
+  transform: translateY(-4px);
+}
 
 
 /*-----------------------------------*\
